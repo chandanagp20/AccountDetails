@@ -1,19 +1,16 @@
-import React from 'react';
 
-
+import  Button  from 'react-bootstrap/Button';
+import { getStudentData, writeStudentData } from './controller';
 import Navbar from './Navbar/Navbar';
 import Bottomview from './Bottomview/Bottomview';
 
 
 const Home = () => {
   return (
-    <div>
-    <Navbar /> 
-   <Bottomview />
-  
-    </div>
-    
-
+    <>
+      <Navbar />
+      <Bottomview /> 
+    </>
   );
 };
 
