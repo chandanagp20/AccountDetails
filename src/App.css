@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.card-history {
+  margin-top: 20px;
+}
+
+.card-history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-history li {
+  margin-bottom: 5px;
+}
+
+/* Add more styles as needed */

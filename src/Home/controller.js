@@ -35,5 +35,17 @@ function addNewAccount(accountNumber,accountHolderName,ifscCode,cvv,branch) {
     });
 }
 
+function creditcardaccount(cardNumber,cardHolder,expMonth,expYear,cvv) {
+    let query = ref(database, `card/${cardNumber}`);
 
-export { getStudentData, writeStudentData,addNewAccount }
+    set(query, {
+        cardNumber:cardNumber,
+        cardHolder:cardHolder,
+        expMonth:expMonth,
+        expYear:expYear,
+        cvv:cvv,
+    });
+}
+
+
+export { getStudentData, writeStudentData,addNewAccount,creditcardaccount }

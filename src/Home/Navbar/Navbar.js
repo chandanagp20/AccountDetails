@@ -1,12 +1,19 @@
+
 import React from 'react';
+import './Navbar.css';
+
 
 const Navbar = () => {
   return (
-    <div>
-     Navbar
+    <div className="mobile-navbar">
+       <div className="navbar-title1">></div>
+      <div className="navbar-title">Your Cards</div>
+      <div className="menu-dots">
+        <span className="dot"></span>
+        <span className="dot"></span>
+        <span className="dot"></span>
+      </div>
     </div>
-    
-
   );
 };
 

@@ -1,0 +1,33 @@
+.AIcard {
+    width: 490px;
+    height: 600px;
+    background-color: #484d6e;
+   
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 0%;
+    color: black;
+    font-size: 1.0rem;
+    color: #fff;
+  
+  }
+ .light-text{
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+
+ }
+ .dateandtime-text{
+  color: #fff;
+  font-size: 0.9rem;
+ }
+ .AIcard-content{
+  margin-top: 8%;
+  color: #fff;
+ }
+ .more-button {
+  text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

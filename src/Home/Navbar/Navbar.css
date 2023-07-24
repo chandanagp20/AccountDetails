@@ -1,0 +1,40 @@
+.mobile-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #484d6e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .navbar-title1 {
+    font-size: 20px;
+    font-weight: bold;
+color: #fff;
+  
+  }
+  
+  .navbar-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 2%;
+    color: #fff;
+  }
+  
+  .menu-dots {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: 3px;
+   
+  }
+  
