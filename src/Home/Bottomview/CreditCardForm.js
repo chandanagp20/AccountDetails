@@ -1,71 +1,56 @@
 import React from 'react';
 
-const CreditCardForm = ({ currentSlide }) => {
-    const hardcodedData = [
-        {
-            cardNumber: '1234 5678 9012 3456',
-            cardHolderName: 'CHANDANA',
-            expiry: '06/29',
-            cvv: '123',
-            branch: 'DAVANAGERE',
-            place: 'DAVANAGERE',
-        },
-        {
-            cardNumber: '0009 8765 4338 7654',
-            cardHolderName: 'XYZ',
-            expiry: '12/24',
-            cvv: '765',
-            branch: 'Banglore',
-            place: 'Banglore',
-        },
-        {
-            cardNumber: '7654 8905 3376 9054',
-            cardHolderName: 'ABC',
-            expiry: '11/28',
-            cvv: '987',
-            branch: 'Mysore',
-            place: 'Banglore',
-        },
+const CreditCardForm = ({ currentData }) => {
 
-    ];
 
-    const currentData = hardcodedData[currentSlide] || {};
+
 
     return (
-        <div>
+        <div style={{ padding: '20px', margin: '0 auto', maxWidth: '400px' }}>
             <br />
 
-            <form style={{ backgroundColor: '#484D6E', padding: '10px', borderRadius: '5px' }}>
-                <div>
-                    <label style={{ color: 'white' }}>Card Number:</label>
-                    <input type="text" value={currentData.cardNumber || ''} readOnly />
+            <div style={{ border: '2px solid #ccc', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>
+                <label><b>Card Number:</b></label>
+                <div style={{ border: '1px solid #ccc', padding: '5px' }}>
+                    <span>{currentData.cardNumber}</span>
                 </div>
-                <hr style={{ borderTop: '2px solid #ccc' }} />
-                <div>
-                    <label style={{ color: 'white' }}>Card Holder Name:</label>
-                    <input type="text" value={currentData.cardHolderName || ''} readOnly />
+            </div>
+
+            <div style={{ border: '2px solid #ccc', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>
+                <label><b>Card Holder Name:</b></label>
+                <div style={{ border: '1px solid #ccc', padding: '5px' }}>
+                    <span>{currentData.cardHolder}</span>
                 </div>
-                <hr style={{ borderTop: '2px solid #ccc' }} />
-                <div>
-                    <label style={{ color: 'white' }}>Expiry:</label>
-                    <input type="text" value={currentData.expiry || ''} readOnly />
+            </div>
+
+            <div style={{ border: '2px solid #ccc', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>
+                <label><b>Expiry:</b></label>
+                <div style={{ border: '1px solid #ccc', padding: '5px' }}>
+                    <span>{currentData.expMonth} {currentData.expYear}</span>
+
                 </div>
-                <hr style={{ borderTop: '2px solid #ccc' }} />
-                <div>
-                    <label style={{ color: 'white' }}>CVV:</label>
-                    <input type="text" value={currentData.cvv || ''} readOnly />
+            </div>
+
+            <div style={{ border: '2px solid #ccc', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>
+                <label><b>CVV:</b></label>
+                <div style={{ border: '1px solid #ccc', padding: '5px' }}>
+                    <span>{currentData.cvv}</span>
                 </div>
-                <hr style={{ borderTop: '2px solid #ccc' }} />
-                <div>
-                    <label style={{ color: 'white' }}>Branch:</label>
-                    <input type="text" value={currentData.branch || ''} readOnly />
+            </div>
+
+            <div style={{ border: '2px solid #ccc', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>
+                <label><b>Branch:</b></label>
+                <div style={{ border: '1px solid #ccc', padding: '5px' }}>
+                    <span>{currentData.branch}</span>
                 </div>
-                <hr style={{ borderTop: '2px solid #ccc' }} />
-                <div>
-                    <label style={{ color: 'white' }}>Place:</label>
-                    <input type="text" value={currentData.place || ''} readOnly />
+            </div>
+
+            <div style={{ border: '2px solid #ccc', padding: '10px', borderRadius: '5px', marginBottom: '10px' }}>
+                <label><b>Place:</b></label>
+                <div style={{ border: '1px solid #ccc', padding: '5px' }}>
+                    <span>{currentData.place}</span>
                 </div>
-            </form>
+            </div>
         </div>
     );
 };

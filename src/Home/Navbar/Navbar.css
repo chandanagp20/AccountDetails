@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #484d6e;
+    background-color: #fff;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,7 +13,7 @@
   .navbar-title1 {
     font-size: 20px;
     font-weight: bold;
-color: #fff;
+color: #141414;
   
   }
   
@@ -21,7 +21,7 @@ color: #fff;
     font-size: 20px;
     font-weight: bold;
     margin-left: 2%;
-    color: #fff;
+    color: #151515;
   }
   
   .menu-dots {
@@ -33,8 +33,25 @@ color: #fff;
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: #1a1919;
     margin-bottom: 3px;
    
   }
+
+.add-credit-card-button {
+  text-decoration: none; 
+  font-weight: bold; 
+  font-size: 20px;
+  font-weight: bold;
+  color: #777c7ae5;
+}
+.credit-card-button {
+  text-decoration: none; 
+  color: #777c7ae5;
+  font-weight: bold; 
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20%;
+}
+
   

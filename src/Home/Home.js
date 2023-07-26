@@ -16,17 +16,9 @@ import CreditCardForm from './Bottomview/CreditCardForm';
 const Home = () => {
   return (
     <>
-
-
       <Navbar />
-
-      {/* <DebitCard /> */}
       <CardSlider />
-      <CreditCardForm />
-
-
-
-
+    
     </>
   );
 };

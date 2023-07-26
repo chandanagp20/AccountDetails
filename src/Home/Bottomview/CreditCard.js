@@ -55,16 +55,16 @@ const CreditCard = () => {
           </div>
           <div className="card-number-box">{cardNumber}</div>
           <div className="flexbox">
-            <div className="box">
-              <span>card holder</span>
+            {/* <div className="box">
+              <span>card holder</span> */}
               <div className="card-holder-name">{cardHolder}</div>
-            </div>
-            <div className="box">
-              <span>expires</span>
+            {/* </div> */}
+            {/* <div className="box">
+              <span>expires</span> */}
               <div className="expiration">
                 <span className="exp-month">{expMonth}</span>
                 <span className="exp-year">{expYear}</span>
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>

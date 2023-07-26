@@ -6,13 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CreditCard from './Home/Bottomview/CreditCard';
 
 
+
 const App = () => {
   return (
     <BrowserRouter>
 
       <Routes>
+       
         <Route path="/" element={<Home />} />
-        <Route path="/add-card" element={<CreditCard />} />
+        <Route path="/credit-card" element={<CreditCard />} />
       </Routes>
     </BrowserRouter>
   );
